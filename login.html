@@ -1,0 +1,180 @@
+<!-- random stuff that needs to be included any time -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- discord/facebook/twitter embed site name -->
+    <meta content="dim scor" property="og:site_name">
+    <!-- discord/facebook/twitter embed title -->
+    <meta content="get ur discorm nintro here" property="og:title">
+    <!-- make it use unicode (we don't actually use unicode tho) -->
+    <meta charset="utf-8">
+    <!-- make it not look tiny af on mobile -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- google fonts tells us to add these 2 lines -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/clyde.png">
+    <style>
+      :root {
+        /* -- means variable */
+        --foreground: white;
+        /* # <red (00-ff)> <green> <blue> */
+        --blue: #6d93fc;
+        --font: "Comic Sans MS", "Comic Sans", "Comic Neue", cursive;
+        /* using a variable */
+        color: var(--foreground);
+        background-color: var(--blue);
+        font-family: var(--font);
+        font-size: 120%;
+      }
+
+      html, body {
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        flex-flow: column nowrap;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .expand {
+        flex: 1 0 auto;
+      }
+
+      #float-content {
+        margin: auto;
+        /* # <red (0123456789abcdef)> <green> <blue> */
+        background-color: #444;
+        /* 50% of screen height */
+        /* height: 50vh; */
+        height: 500px;
+        /* 50% of screen width */
+        /* width: 50vw; */
+        width: 800px;
+        display: flex;
+        border-radius: 0.2em;
+      }
+
+      /* headings */
+      h1, h2, h3, h4, h5, h6 {
+        font-weight: bold;
+        margin: 0;
+        margin-top: 0.5em;
+        margin-bottom: 0.3em;
+      }
+
+      h2 {
+        font-size: 200%;
+      }
+      
+      h3 {
+        font-size: 150%;
+      }
+
+      #qr {
+        height: 10em;
+        border-radius: 0.2em;
+      }
+
+      label {
+        font-size: 75%;
+        text-transform: uppercase;
+      }
+
+      input {
+        border-radius: 0.1em;
+        background: #333;
+        border: 1px solid #111;
+        color: var(--foreground);
+        /* top/bottom padding, sides padding */
+        padding: 0.4em 0.2em;
+        font-family: var(--font);
+        font-size: 100%;
+      }
+
+      #login {
+        flex: 3 0 auto;
+        padding: 2em;
+        display: flex;
+        flex-flow: column nowrap;
+      }
+
+      #qr-container {
+        flex: 2 0 0;
+        padding: 4em;
+        text-align: center;
+      }
+
+      .pad {
+        padding: 0.4em 0;
+      }
+
+      .left {
+        float: left;
+      }
+
+      a, a:visited {
+        color:#39a6d1;
+        /* underline, strikethrough etc. */
+        text-decoration: none;
+      }
+
+      #login-btn {
+        border-radius: 0.1em;
+        border: none;
+        background-color: var(--blue);
+        color: var(--foreground);
+        font-family: var(--font);
+        font-size: 100%;
+        padding: 0.4em 0.2em;
+
+        cursor: pointer;
+        text-align: center;
+      }
+    </style>
+    <!-- ok. -->
+    <title>dimscorm</title>
+  </head>
+  <body>
+    <div class="expand"></div>
+    <div id="float-content">
+      <div id="login">
+        <div class="center">
+          <h2>welcome back!!11!</h2>
+          <span>this is totally not a scam!!!</span>
+        </div>
+        <!-- a newline -->
+        <br>
+        <!-- gotta make it really obvious its fake cuz -->
+        <!-- some people are surprisingly gullible -->
+        <label for="dim">dim</label>
+        <br>
+        <input type="text" id="dim" placeholder="dim">
+        <br>
+        <label for="scor">scor</label>
+        <br>
+        <input type="text" id="password" placeholder="scor">
+        <br>
+        <a class="pad" href="https://lemonth.ink" class="left">forgor? 💀</a>
+        <a id="login-btn" href="https://www.youtube.com/watch?v=A67ZkAd1wmI">login</a>
+        <span class="pad" class="left">need dingdong? <a href="https://progami.ng">register</a></span>
+      </div>
+      <div id="qr-container">
+        <div id="qr-div">
+          <img id="qr" src="assets/qr.svg">
+        </div>
+        <!-- well shit that was big -->
+        <div id="qr-description">
+          <h3>log in with qr code</h3>
+          <span>pls scan with <b>qr code scanner</b> it is a very important link</span>
+        </div>
+      </div>
+    </div>
+    <div class="expand"></div>
+  </body>
+</html>
