@@ -168,9 +168,9 @@ i get: - monie - ok" property="og:description">
         <br>
         <input type="text" id="password" placeholder="scor">
         <br>
-        <a class="pad" href="https://lemonth.ink" class="left">forgor? 💀</a>
-        <a id="login-btn" href="https://www.youtube.com/watch?v=A67ZkAd1wmI">login</a>
-        <span class="pad" class="left">need dingdong? <a href="https://progami.ng">register</a></span>
+        <a id="forgor" class="pad" href="https://www.youtube.com/watch?v=6hOXpQ1ND_Q" class="left">forgor? 💀</a>
+        <a id="login-btn" href="https://www.youtube.com/watch?v=2JpmVcJVfdQ">login</a>
+        <span class="pad" class="left">need dingdong? <a id="register" href="https://www.youtube.com/watch?v=EvkCcbd7oJM">register</a></span>
       </div>
       <div id="qr-container">
         <div id="qr-div">
@@ -184,5 +184,29 @@ i get: - monie - ok" property="og:description">
       </div>
     </div>
     <div class="expand"></div>
+    <script>
+      const urls = [
+        'https://www.youtube.com/watch?v=6hOXpQ1ND_Q',
+        'https://www.youtube.com/watch?v=bWvbWnKyAd0',
+        'https://www.youtube.com/watch?v=QS3UAznVKXk',
+        'https://www.youtube.com/watch?v=2cSMVOLHxOE',
+        'https://www.youtube.com/watch?v=2JpmVcJVfdQ',
+        'https://www.youtube.com/watch?v=EvkCcbd7oJM',
+        'https://www.youtube.com/watch?v=iwuLZzsT40E',
+        'https://www.youtube.com/watch?v=c2orBsXp4HM',
+        'https://www.youtube.com/watch?v=XW2QHt3IjJY',
+        'https://www.youtube.com/watch?v=T1admIYedZE',
+        'https://www.youtube.com/watch?v=WcQDgnSEuzo',
+        'https://www.youtube.com/watch?v=OjoPZZk-yE4',
+        'https://www.youtube.com/watch?v=ZGKl8SOBRtk',
+        'https://www.youtube.com/watch?v=1rfVWDEjve8',
+        'https://www.youtube.com/watch?v=0GY1R61ppKk',
+        'https://www.youtube.com/watch?v=SpQkBZZcx0M',
+      ];
+      const popRandomURL = () => urls.splice(Math.floor(Math.random() * urls.length), 1)[0];
+      document.getElementById('forgor').href = popRandomURL();
+      document.getElementById('login-btn').href = popRandomURL();
+      document.getElementById('register').href = popRandomURL();
+    </script>
   </body>
 </html>
